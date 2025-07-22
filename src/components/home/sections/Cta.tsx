@@ -3,7 +3,10 @@ import { MapPin } from 'lucide-react';
 
 const Cta = () => {
   return (
-    <section className="bg-gradient-to-r from-red-600 to-green-600 py-16 lg:py-24">
+    <section
+      className="bg-gradient-to-r from-red-600 to-green-600 py-16 lg:py-24"
+      id="cta"
+    >
       <div className="container mx-auto px-4 text-center lg:px-6">
         <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
           ¿Listo para tu Aventura en CDMX?

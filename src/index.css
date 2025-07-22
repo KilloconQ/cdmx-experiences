@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 body {
-  font-family: "Geist Variables", sans-serif;
+  font-family: 'Geist Variables', sans-serif;
 }

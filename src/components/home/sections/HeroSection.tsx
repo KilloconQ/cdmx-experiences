@@ -3,7 +3,7 @@ import { Button } from '../../ui/button';
 const HeroSection = () => {
   return (
     <>
-      <section className="relative overflow-hidden py-20 lg:py-32">
+      <section className="relative overflow-hidden py-20 lg:py-32" id="hero">
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/90 to-green-600/90"></div>
         {/* <img */}
         {/*   src="/placeholder.svg?height=600&width=1200" */}
@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* /> */}
         <div className="relative z-10 container mx-auto px-4 lg:px-6">
           <div className="max-w-3xl">
-            <h1 className="mb-6 text-4xl font-bold lg:text-6xl">
+            <h1 className="mb-6 text-center text-4xl font-bold lg:text-start lg:text-6xl">
               Descubre la Magia de la
               <span className="block text-yellow-300">Ciudad de México</span>
             </h1>
