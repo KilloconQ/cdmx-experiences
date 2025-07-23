@@ -10,8 +10,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <header>
-        <nav className="top-0 flex w-full flex-row items-center justify-between px-6 py-4">
+      <header className="sticky top-0 z-50 w-full bg-white shadow-md">
+        <nav className="flex w-full flex-row items-center justify-between px-6 py-4">
           <div className="flex flex-row items-center gap-4">
             <img />
             <p className="cursor-pointer text-xl font-bold text-gray-900">
