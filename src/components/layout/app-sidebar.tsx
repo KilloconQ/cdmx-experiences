@@ -23,6 +23,8 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <div className="flex items-center space-x-2 p-4">
+          {' '}
+          {/* Ajustado el padding */}
           <div className="h-8 w-8 rounded-full bg-gray-800"></div>
           <span className="text-xl font-bold text-gray-900">Explora CDMX</span>
         </div>

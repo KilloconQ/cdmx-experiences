@@ -10,7 +10,7 @@
 - [ ] Stripe connection
 - [ ] Tour Guides Page/Photos
 - [ ] Calificar al terminar el tour
-- [ ] Mobile responsive
+- [x] Mobile responsive
 - [ ] Skeleton loader
 - [ ] Add button animation (more Experiences)
 - [ ] i18n

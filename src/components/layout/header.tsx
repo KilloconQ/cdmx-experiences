@@ -1,30 +1,47 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Button } from '@/components/ui/button';
+import { SidebarTrigger } from '@/components/ui/sidebar';
+import { Menu } from 'lucide-react'; // Icono para el botón del menú
 
-export function Header() {
+function Header() {
   return (
-    <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-      <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-6">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-green-500 rounded-full"></div>
-          <span className="text-xl font-bold text-gray-900">CDMX Experiences</span>
+          <div className="h-8 w-8 rounded-full bg-gray-800"></div>
+          <span className="text-xl font-bold text-gray-900">Explora CDMX</span>
         </div>
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link href="#experiencias" className="text-sm font-medium hover:text-red-600 transition-colors">
+        <nav className="hidden items-center space-x-6 md:flex">
+          {' '}
+          {/* Navegación de escritorio */}
+          <a
+            href="#experiencias"
+            className="text-sm font-medium transition-colors hover:text-red-600"
+          >
             Experiencias
-          </Link>
-          <Link href="#categorias" className="text-sm font-medium hover:text-red-600 transition-colors">
+          </a>
+          <a
+            href="#categorias"
+            className="text-sm font-medium transition-colors hover:text-red-600"
+          >
             Categorías
-          </Link>
-          <Link href="#testimonios" className="text-sm font-medium hover:text-red-600 transition-colors">
+          </a>
+          <a
+            href="#testimonios"
+            className="text-sm font-medium transition-colors hover:text-red-600"
+          >
             Testimonios
-          </Link>
-          <Link href="#contacto" className="text-sm font-medium hover:text-red-600 transition-colors">
+          </a>
+          <a
+            href="#contacto"
+            className="text-sm font-medium transition-colors hover:text-red-600"
+          >
             Contacto
-          </Link>
+          </a>
         </nav>
         <Button className="bg-red-600 hover:bg-red-700">Reservar Ahora</Button>
       </div>
     </header>
-  )
+  );
 }
+
+export default Header;
